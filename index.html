@@ -850,6 +850,177 @@
         .not-loaded * {
             animation-play-state: paused !important;
         }
+
+        /* Mobile Responsiveness */
+        @media screen and (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .typed-message {
+                font-size: 20px;
+                max-width: 95vw;
+                top: 10%;
+                padding: 0 10px;
+                white-space: normal;
+                line-height: 1.4;
+            }
+
+            .gift-box {
+                width: 120px;
+                height: 120px;
+            }
+
+            .ribbon-horizontal {
+                width: 120px;
+            }
+
+            .ribbon-vertical {
+                height: 120px;
+            }
+
+            .click-instruction {
+                font-size: 20px;
+                padding: 10px 20px;
+                margin-top: 20px;
+                max-width: 90vw;
+                text-align: center;
+            }
+
+            .mail-icon {
+                width: 70px;
+                height: 50px;
+                bottom: 15%;
+                right: 5%;
+            }
+
+            .mail-icon::before {
+                border-left: 35px solid transparent;
+                border-right: 35px solid transparent;
+                border-bottom: 25px solid #ff3742;
+            }
+
+            .mail-icon::after {
+                font-size: 20px;
+            }
+
+            .mailbox-instruction {
+                font-size: 18px;
+                bottom: 25%;
+                right: 5%;
+                padding: 6px 12px;
+                max-width: 200px;
+                text-align: center;
+            }
+
+            .message-popup {
+                padding: 20px;
+                max-width: 95vw;
+                width: 95%;
+                max-height: 85vh;
+                margin: 10px;
+            }
+
+            .message-popup h2 {
+                font-size: 28px;
+                margin-bottom: 12px;
+            }
+
+            .message-popup p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .close-btn {
+                top: 8px;
+                right: 12px;
+                font-size: 22px;
+            }
+
+            /* Adjust flower scaling for mobile */
+            .flowers {
+                transform: scale(0.4);
+            }
+
+            .flower__leafs::after {
+                width: 6vmin;
+                height: 6vmin;
+            }
+
+            /* Better mobile positioning for instructions */
+            .click-instruction {
+                position: fixed !important;
+                bottom: 10% !important;
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .typed-message {
+                font-size: 18px;
+                top: 8%;
+            }
+
+            .gift-box {
+                width: 100px;
+                height: 100px;
+            }
+
+            .ribbon-horizontal {
+                width: 100px;
+                height: 16px;
+            }
+
+            .ribbon-vertical {
+                width: 16px;
+                height: 100px;
+            }
+
+            .bow {
+                width: 35px;
+                height: 25px;
+                top: -12px;
+            }
+
+            .mail-icon {
+                width: 60px;
+                height: 45px;
+            }
+
+            .mail-icon::before {
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                border-bottom: 22px solid #ff3742;
+            }
+
+            .mailbox-instruction {
+                font-size: 16px;
+                bottom: 22%;
+            }
+
+            .message-popup {
+                padding: 15px;
+                border-radius: 15px;
+            }
+
+            .message-popup h2 {
+                font-size: 24px;
+            }
+
+            .message-popup p {
+                font-size: 15px;
+            }
+
+            .flowers {
+                transform: scale(0.3);
+            }
+
+            .click-instruction {
+                font-size: 18px;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 <body class="not-loaded">
@@ -964,7 +1135,7 @@
         <button class="close-btn" id="closeBtn">&times;</button>
         <h2>💕 A Special Message 💕</h2>
         <p>
-            Dear My Froggy Cristie,<br><br>
+           Dear My Froggy Cristie,<br><br>
             Happy Birthday! Sobrang thankful ko na nakilala kita, thankful ako na ikaw yung unang taong naging close ko
             sa PUP, simula pa nung enrollment. Maraming salamat kasi kahit madaldal ako at feeling ko na bobother na kita minsan is tinotolerate 
             mo parin kadaldalan ko. I'm sorry din kasi minsan makulit ako, or mapilit, chat nang chat
